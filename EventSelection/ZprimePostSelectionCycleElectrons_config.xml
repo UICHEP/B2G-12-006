@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JobConfiguration PUBLIC "" "JobConfig.dtd">
+
+<JobConfiguration JobName="ZprimePostSelectionCycleJob" OutputLevel="INFO">
+
+<Library Name="libfastjet"/>
+<Library Name="libfastjettools"/>
+<Library Name="libSFramePlugIns"/>
+<Library Name="libSFrameTools"/>
+<Library Name="libAnalysis"/>
+
+<Package Name="SFrameCore.par" />
+<Package Name="SFramePlugIns.par" />
+<Package Name="Analysis.par" />
+
+<Cycle Name="ZprimePostSelectionCycle" OutputDirectory="Outputs/ElectronPostselection_53xNTuple-v2/" PostFix="" TargetLumi="1.0"> 
+
+        <InputData Lumi="1" NEventsMax="-1" Type="DATA" Version="DATA" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.DATA.DATA.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" /> 
+        </InputData>
+
+        <InputData Lumi="84616" NEventsMax="-1" Type="MC" Version="RSG1000" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG1000.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="100000" NEventsMax="-1" Type="MC" Version="RSG1500" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG1500.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="92304" NEventsMax="-1" Type="MC" Version="RSG2000" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG2000.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="100000" NEventsMax="-1" Type="MC" Version="RSG2500" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG2500.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="100000" NEventsMax="-1" Type="MC" Version="RSG3000" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG3000.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="84616" NEventsMax="-1" Type="MC" Version="RSG3500" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG3500.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="84616" NEventsMax="-1" Type="MC" Version="RSG4000" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.RSG4000.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="118975" NEventsMax="-1" Type="MC" Version="ZP500w5" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP500w5.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" /> 
+        </InputData>
+
+        <InputData Lumi="110507" NEventsMax="-1" Type="MC" Version="ZP500w50" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP500w50.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" /> 
+        </InputData> 
+
+        <InputData Lumi="93281" NEventsMax="-1" Type="MC" Version="ZP750w7p5" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP750w7p5.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" /> 
+        </InputData> 
+
+        <InputData Lumi="106587" NEventsMax="-1" Type="MC" Version="ZP750w75" Cacheable="False">
+           <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP750w75.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" /> 
+        </InputData> 
+
+        <InputData Lumi="103095" NEventsMax="-1" Type="MC" Version="ZP1000w10" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP1000w10.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" /> 
+        </InputData> 
+
+        <InputData Lumi="104043" NEventsMax="-1" Type="MC" Version="ZP1000w100" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP1000w100.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+         <InputData Lumi="97864" NEventsMax="-1" Type="MC" Version="ZP1250w12p5" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP1250w12p5.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+         </InputData>
+
+         <InputData Lumi="85297" NEventsMax="-1" Type="MC" Version="ZP1250w125" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP1250w125.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+        
+        <InputData Lumi="97349" NEventsMax="-1" Type="MC" Version="ZP1500w15" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP1500w15.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+       </InputData>
+
+       <InputData Lumi="98775" NEventsMax="-1" Type="MC" Version="ZP1500w150" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP1500w150.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="94817" NEventsMax="-1" Type="MC" Version="ZP2000w20" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP2000w20.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="97240" NEventsMax="-1" Type="MC" Version="ZP2000w200" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP2000w200.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="96371" NEventsMax="-1" Type="MC" Version="ZP3000w30" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP3000w30.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="100554" NEventsMax="-1" Type="MC" Version="ZP3000w300" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP3000w300.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="102490" NEventsMax="-1" Type="MC" Version="ZP4000w40" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP4000w40.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="103388" NEventsMax="-1" Type="MC" Version="ZP4000w400" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZP4000w400.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="8288.5" NEventsMax="-1" Type="MC" Version="DYJets_10to50" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DYJets_10to50.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="8693.5" NEventsMax="-1" Type="MC" Version="DYJets_50toInf" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DYJets_50toInf.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="36088" NEventsMax="-1" Type="MC" Version="DY1Jets_50toInf" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DY1Jets_50toInf.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="10942" NEventsMax="-1" Type="MC" Version="DY2Jets_50toInf" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DY2Jets_50toInf.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="181499" NEventsMax="-1" Type="MC" Version="DY3Jets_50toInf" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DY3Jets_50toInf.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="233982" NEventsMax="-1" Type="MC" Version="DY4Jets_50toInf" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DY4Jets_50toInf.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="66635" NEventsMax="-1" Type="MC" Version="SingleTop_T_tch" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.SingleTop_T_tch.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="44834" NEventsMax="-1" Type="MC" Version="SingleTop_T_tWch" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.SingleTop_T_tWch.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="68591" NEventsMax="-1" Type="MC" Version="SingleTop_T_sch" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.SingleTop_T_sch.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="63032" NEventsMax="-1" Type="MC" Version="SingleTop_Tbar_tch" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.SingleTop_Tbar_tch.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="44456" NEventsMax="-1" Type="MC" Version="SingleTop_Tbar_tWch" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.SingleTop_Tbar_tWch.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="79531" NEventsMax="-1" Type="MC" Version="SingleTop_Tbar_sch" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.SingleTop_Tbar_sch.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="92270" NEventsMax="-1" Type="MC" Version="TTbar" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="178197" NEventsMax="-1" Type="MC" Version="TTbar_700to1000" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_700to1000.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="378518" NEventsMax="-1" Type="MC" Version="TTbar_1000toInf" Cacheable="False">
+             <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_1000toInf.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="29589" NEventsMax="-1" Type="MC" Version="TTbar_madgraph" Cacheable="False">
+             <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_madgraph.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="2097.3" NEventsMax="-1" Type="MC" Version="WJets" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WJets.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="3593.1" NEventsMax="-1" Type="MC" Version="W1Jets" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.W1Jets.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="16311" NEventsMax="-1" Type="MC" Version="W2Jets" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.W2Jets.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="25104" NEventsMax="-1" Type="MC" Version="W3Jets" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.W3Jets.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="52433" NEventsMax="-1" Type="MC" Version="W4Jets" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.W4Jets.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="182490" NEventsMax="-1" Type="MC" Version="WW" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WW.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="296744" NEventsMax="-1" Type="MC" Version="WZ" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WZ.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="1216020" NEventsMax="-1" Type="MC" Version="ZZ" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.ZZ.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="10.3964" NEventsMax="-1" Type="MC" Version="QCD_Pt_20_30_BCtoE" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_20_30_BCtoE.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="12.2614" NEventsMax="-1" Type="MC" Version="QCD_Pt_30_80_BCtoE" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_30_80_BCtoE.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="149.864" NEventsMax="-1" Type="MC" Version="QCD_Pt_80_170_BCtoE" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_80_170_BCtoE.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="3082.49" NEventsMax="-1" Type="MC" Version="QCD_Pt_170_250_BCtoE" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_170_250_BCtoE.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="19622.6" NEventsMax="-1" Type="MC" Version="QCD_Pt_250_350_BCtoE" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_250_350_BCtoE.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="81445.0" NEventsMax="-1" Type="MC" Version="QCD_Pt_350_BCtoE" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_350_BCtoE.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="12.0214" NEventsMax="-1" Type="MC" Version="QCD_Pt_20_30_EMEnriched" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_20_30_EMEnriched.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="7.16847" NEventsMax="-1" Type="MC" Version="QCD_Pt_30_80_EMEnriched" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_30_80_EMEnriched.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="188.455" NEventsMax="-1" Type="MC" Version="QCD_Pt_80_170_EMEnriched" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_80_170_EMEnriched.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="6910.92" NEventsMax="-1" Type="MC" Version="QCD_Pt_170_250_EMEnriched" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_170_250_EMEnriched.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="62166.7" NEventsMax="-1" Type="MC" Version="QCD_Pt_250_350_EMEnriched" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_250_350_EMEnriched.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="382498" NEventsMax="-1" Type="MC" Version="QCD_Pt_350_EMEnriched" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.QCD_Pt_350_EMEnriched.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="619.42" NEventsMax="-1" Type="MC" Version="DYJets_50toInf_scaleup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DYJets_50toInf_scaleup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="552.24" NEventsMax="-1" Type="MC" Version="DYJets_50toInf_scaledown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DYJets_50toInf_scaledown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="566.69" NEventsMax="-1" Type="MC" Version="DYJets_50toInf_matchingup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DYJets_50toInf_matchingup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="602.90" NEventsMax="-1" Type="MC" Version="DYJets_50toInf_matchingdown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.DYJets_50toInf_matchingdown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="573.26" NEventsMax="-1" Type="MC" Version="WJets_scaleup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WJets_scaleup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="572.61" NEventsMax="-1" Type="MC" Version="WJets_scaledown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WJets_scaledown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="578.54" NEventsMax="-1" Type="MC" Version="WJets_matchingup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WJets_matchingup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="589.26" NEventsMax="-1" Type="MC" Version="WJets_matchingdown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.WJets_matchingdown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="64071.8" NEventsMax="-1" Type="MC" Version="TTbar_scaleup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_scaleup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="64096.9" NEventsMax="-1" Type="MC" Version="TTbar_scaledown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_scaledown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="137051" NEventsMax="-1" Type="MC" Version="TTbar_700to1000_scaleup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_700to1000_scaleup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="117630" NEventsMax="-1" Type="MC" Version="TTbar_700to1000_scaledown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_700to1000_scaledown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="408048" NEventsMax="-1" Type="MC" Version="TTbar_1000toInf_scaleup" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_1000toInf_scaleup.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <InputData Lumi="349383" NEventsMax="-1" Type="MC" Version="TTbar_1000toInf_scaledown" Cacheable="False">
+            <In FileName="Outputs/ElectronSelection_53xNTuple-v2/ZprimeSelectionCycle.MC.TTbar_1000toInf_scaledown.root" Lumi="0.0"/>
+            <InputTree Name="AnalysisTree" />
+        </InputData>
+
+        <UserConfig>
+            <Item Name="Electron_Or_Muon_Selection" Value="Electron" />
+            <Item Name="JetCollection" Value="goodPatJetsPFlow" />  
+            <Item Name="ElectronCollection" Value="selectedPatElectronsPFlowLoose" /> 
+            <Item Name="MuonCollection" Value="selectedPatMuonsPFlowLoose" /> 
+            <Item Name="TauCollection" Value="selectedPatTausPFlow" /> 
+            <Item Name="PrimaryVertexCollection" Value="goodOfflinePrimaryVertices" /> 
+            <Item Name="METName" Value="patMETsPFlow" />  
+            <Item Name="TopJetCollection" Value="goodPatJetsCATopTagPF" />
+            <Item Name="TopJetCollectionGen" Value="caTopTagGen" />
+            <Item Name="PrunedJetCollection" Value="goodPatJetsCA8PrunedPF" />  
+            <Item Name="GenParticleCollection" Value="GenParticles" /> 
+            <Item Name="ApplyMttbarGenCut" Value="false" />
+
+            <Item Name="LumiFilePath" Value="LumiFiles/" />
+            <Item Name="LumiFileName" Value="HLT_Ele30_CaloIdVT_TrkIdT_PFNoPUJet100_PFNoPUJet25_208686.root" />
+            <Item Name="LumiTrigger" Value="HLT_Ele30_CaloIdVT_TrkIdT_PFNoPUJet100_PFNoPUJet25_v" />
+
+            <Item Name="PU_Filename_MC" Value="PileUpHistos/PileUpHistoCycle" />
+            <Item Name="PU_Filename_Data" Value="PileUpHistos/PileUpHistoCycle.DATA.ElectronHad_208686.root"/>
+            <Item Name="PU_Histname_Data" Value="pileup" />
+            <Item Name="PU_Histname_MC" Value="N_pileup_hist" />
+
+            <Item Name="writeTTbarReco" Value="True" />  
+            <Item Name="readTTbarReco" Value="True" /> 
+
+            <Item Name="BTaggingScaleFactors" Value="default" />
+            <Item Name="ApplyFlavorSelection" Value="None" />
+
+            <!--<Item Name="LeptonScaleFactors" Value="HLT_Ele30 1" />-->
+
+            </UserConfig>
+    </Cycle>
+</JobConfiguration>
